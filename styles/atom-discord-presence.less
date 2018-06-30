@@ -1,0 +1,79 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.atom-discord-presence {
+}
+
+.discord-icon, .discord-logo {
+    background-image: url('https://discordapp.com/assets/1c8a54f25d101bdc607cec7228247a9a.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 30px;
+}
+
+.discord-logo {
+    background-image: url('https://discordapp.com/assets/4f004ac9be168ac6ee18fc442a52ab53.svg');
+    width: auto;
+    height: 22px;
+    margin-bottom: 6px;
+}
+
+img.discord-icon, img.discord-logo {
+    background-image: none;
+}
+
+.discord-icon + .discord-label {
+    margin-left: 5px !important;
+}
+
+.tooltip.atom-discord-presence-popover {
+    // This is the same as Teletype's popover (except padding)
+    .tooltip-inner {
+        padding: 10px 12px;
+        background-color: #21252b;
+        border: 1px solid #181a1f;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: #9da5b4;
+        max-height: 300px;
+        white-space: normal;
+        overflow-y: auto;
+
+        text-align: left;
+        line-height: 1.2;
+        min-width: 300px;
+    }
+
+    .tooltip-arrow {
+        width: 10px;
+        height: 10px;
+        border-width: 0 0 1px 1px;
+        border-color: #181a1f;
+        background-color: #21252b;
+        border-bottom-right-radius: 2px;
+        transform: rotate(-45deg);
+    }
+}
+
+.atom-discord-presence-popover {
+    .status:not(:empty)::before,
+    .projectname:not(:empty)::before,
+    .filename:not(:empty)::before {
+        content: 'Status';
+        display: block;
+        margin-top: 6px;
+        font-weight: 500;
+    }
+
+    .projectname:not(:empty)::before {
+        content: 'Project name';
+    }
+
+    .filename:not(:empty)::before {
+        content: 'File name';
+    }
+}

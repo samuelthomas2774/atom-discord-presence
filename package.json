@@ -1,0 +1,21 @@
+{
+    "name": "atom-discord-presence",
+    "main": "./lib/atom-discord-presence",
+    "version": "0.0.0",
+    "activationHooks": [
+        "core:loaded-shell-environment"
+    ],
+    "engines": {
+        "atom": ">=1.0.0 <2.0.0"
+    },
+    "dependencies": {
+        "discord-rpc": "^3.0.0-beta.10"
+    },
+    "consumedServices": {
+        "status-bar": {
+            "versions": {
+                "^1.0.0": "consumeStatusBar"
+            }
+        }
+    }
+}
