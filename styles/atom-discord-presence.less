@@ -62,7 +62,8 @@ img.discord-icon, img.discord-logo {
 .atom-discord-presence-popover {
     .status:not(:empty)::before,
     .projectname:not(:empty)::before,
-    .filename:not(:empty)::before {
+    .filename:not(:empty)::before,
+    .teletype-token:not(:empty)::before {
         content: 'Status';
         display: block;
         margin-top: 6px;
@@ -75,5 +76,9 @@ img.discord-icon, img.discord-logo {
 
     .filename:not(:empty)::before {
         content: 'File name';
+    }
+
+    .teletype-token:not(:empty)::before {
+        content: 'Teletype token';
     }
 }

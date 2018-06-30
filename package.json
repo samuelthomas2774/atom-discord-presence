@@ -16,6 +16,11 @@
             "versions": {
                 "^1.0.0": "consumeStatusBar"
             }
+        },
+        "teletype": {
+            "versions": {
+                "0.0.1": "consumeTeletype"
+            }
         }
     }
 }
