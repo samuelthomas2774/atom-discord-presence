@@ -1,0 +1,30 @@
+{
+    "menu": [
+        {
+            "label": "Packages",
+            "submenu": [
+                {
+                    "label": "Atom Discord Presence",
+                    "submenu": [
+                        {
+                            "label": "Connect",
+                            "command": "atom-discord-presence:connect"
+                        },
+                        {
+                            "label": "Update",
+                            "command": "atom-discord-presence:update"
+                        },
+                        {
+                            "label": "Disconnect",
+                            "command": "atom-discord-presence:disconnect"
+                        },
+                        {
+                            "label": "Reset Timestamp",
+                            "command": "atom-discord-presence:reset-timestamp"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
