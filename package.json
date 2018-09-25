@@ -2,6 +2,16 @@
     "name": "atom-discord-presence",
     "main": "./lib/atom-discord-presence",
     "version": "0.0.0",
+    "homepage": "https://gitlab.fancy.org.uk/samuel/atom-discord-presence",
+    "bugs": "https://gitlab.fancy.org.uk/samuel/atom-discord-presence/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/samuelthomas2774/atom-discord-presence"
+    },
+    "author": {
+        "name": "Samuel Elliott",
+        "url": "https://samuelelliott.ml"
+    },
     "activationHooks": [
         "core:loaded-shell-environment"
     ],
